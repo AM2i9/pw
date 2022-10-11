@@ -1,0 +1,196 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Programming - Day 1</title>
+
+		<link rel="stylesheet" href="../reveal/dist/reset.css">
+		<link rel="stylesheet" href="../reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal/dist/theme/blood.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h2>Welcome to Programming!</h2>
+					<img src="../reveal/images/duck_white.png" alt="ducky" width="150vw">
+				</section>
+
+				<section>
+					<h4>What our pre-season looks like</h4>
+					<li class="fragment fade-up">Learning Java/Basic programing skills</li>
+					<li class="fragment fade-up">Learning how to use git and GitHub</li>
+					<li class="fragment fade-up">Learning how to code a robot (the fun stuff)</li>
+					<li class="fragment fade-up">Other robot-related projects, new AprilTag targets</li>
+				</section>
+
+				<section>
+					<h4>Join the classroom:</h4>
+					<h2 class="r-fit-text">5qlppua</h2>
+				</section>
+
+				<section>
+					<img src="https://static.javatpoint.com/core/images/java-logo1.png">
+				</section>
+
+				<section>
+					<h4>Java Syntax</h4>
+					<p class="fragment fade-up">Java code is made up of <strong>statements</strong></p>
+					<div class="fragment fade-up">
+						<pre><code class="language-java" data-trim data-noescape data-line-numbers="1-3|5-8|1,3,5,10">
+							// ; is used to show the end of a statement
+							int sum = x + y;
+							//             ^
+
+							// {} are used to create a block of code
+							if (sum > 5) {
+								System.out.println("The sum is greater than 5");
+							}
+
+							// double forward slashes are used to create comments
+						</code></pre>
+					</div>
+				</section>
+
+				<section>
+					<section>
+						<h4>Variables and Data Types</h4>
+						<p class="fragment fade-up"><strong>Variables</strong> are space in a computer's memory where a value can be stored</p>
+					</section>
+
+					<section>
+						<h4>Declaration</h4>
+						<p>The declaration of a variable tells the computer to reserve a space in memory for a value, and to give us a link to that</p>
+						<pre><code class="language-java" data-trim data-noescape data-line-numbers>
+							// This creates a link to a space in memory where we can
+							// store an integer
+							int sum;
+						</code></pre>
+					</section>
+					
+					<!-- Need to use &lt and &gt to get <> because of html-->
+					<section>
+						&lt;data-type&gt; &lt;name&gt;;
+					</section>
+
+					<section>
+						<h4>Data Types</h4>
+						<li><strong>int</strong> - an integer (1, 2, 3, 53904, 5)</li>
+						<li><strong>float</strong> - a decimal number (3.14, 1.78, 5.98)</li>
+						<li><strong>double</strong> - a more precise float</li>
+						<li><strong>boolean</strong> - true or false</li>
+						<li><strong>String</strong> - a sequence of characters, e.g. "Hello World!"</li>
+					</section>
+
+					<section>
+						<pre><code class="language-java" data-trim data-noescape data-line-numbers>
+							int myInteger;
+							float floatingNumber;
+							double twoTimesMorePrecise;
+							boolean yesOrNo;
+							String textMessage;
+						</code></pre>
+					</section>
+
+					<section data-auto-animate>
+						<pre data-id="sum-animation"><code class="language-java" data-trim data-noescape data-line-numbers>
+							// This creates a link to a space in memory where we can
+							// store an integer
+							int sum;
+						</code></pre>
+					</section>
+
+					<section data-auto-animate>
+						<h4 class="fragment fade-in-then-semi-out">Assignment</h4>
+						<h4 class="fragment fade-in">Initialization</h4>
+						<pre data-id="sum-animation"><code class="language-java" data-trim data-noescape data-line-numbers>
+							// This creates a link to a space in memory where we can
+							// store an integer
+							int sum;
+
+							// Store an integer in our variable 'sum'
+							sum = 1 + 1;
+						</code></pre>
+					</section>
+
+					<section data-auto-animate>
+						<h4>Initialization</h4>
+						<p>Initialization is the <strong>first</strong> assigment of a variable</p>
+						<pre data-id="sum-animation"><code class="language-java" data-trim data-noescape data-line-numbers>
+							// This creates a link to a space in memory where we can
+							// store an integer
+							int sum;
+
+							// Store an integer in our variable 'sum'
+							sum = 1 + 1;
+						</code></pre>
+					</section>
+
+					<section data-auto-animate>
+						<h4>Initialization</h4>
+						<p>Initialization is the <strong>first</strong> assigment of a variable</p>
+						<pre data-id="sum-animation"><code class="language-java" data-trim data-noescape data-line-numbers>
+							// This creates a link to a space in memory where we can
+							// store an integer
+							int sum;
+
+							// Store an integer in our variable 'sum'
+							sum = 1 + 1; // Initialization, first assignment
+
+							sum = 3; // Assigning a new value to 'sum'
+						</code></pre>
+					</section>
+
+					<section data-auto-animate>
+						<h4>Initialization</h4>
+						<p>Initialization is the <strong>first</strong> assigment of a variable</p>
+						<pre data-id="sum-animation"><code class="language-java" data-trim data-noescape data-line-numbers>
+							// This creates a link to a space in memory where we can
+							// store an integer
+							int sum;
+
+							// Store an integer in our variable 'sum'
+							sum = 1 + 1; // Initialization, first assignment
+
+							sum = 3; // Assigning a new value to 'sum'
+						 	
+							// Initialization can be done on the same line
+							// as the declaration
+							int myNumber = 178;
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<h4>Enough talk, let's write some code!</h4>
+					<a href="https://codingrooms.com">https://codingrooms.com</a>
+				</section>
+			</div>
+		</div>
+
+		<script src="../reveal/dist/reveal.js"></script>
+		<script src="../reveal/plugin/notes/notes.js"></script>
+		<script src="../reveal/plugin/markdown/markdown.js"></script>
+		<script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+				highight: {
+					beforeHighlight: hljs => {
+						console.log(hljs.listanguages());
+					}
+				},
+			});
+		</script>
+	</body>
+</html>
