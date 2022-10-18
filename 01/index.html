@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Programming - Day 2</title>
+
+		<link rel="stylesheet" href="../reveal/dist/reset.css">
+		<link rel="stylesheet" href="../reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal/dist/theme/blood.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Welcome to Programming!</h2>
+					<h2>Part 2</h2>
+					<p style="font-size: small;">Electric Boogaloo</p>
+					<img src="../reveal/images/duck_white.png" alt="ducky" width="150vw">
+				</section>
+
+				<section>
+					<section>
+						<h1>Java Operators</h1>
+						<p>Arithmetic Operators</p>
+						<p class="fragment fade-up">In short, math</p>
+					</section>
+					<section data-transition="zoom">
+						<pre><code class="language-java" data-trim data-noescape data-line-numbers>
+							int sum = 1 + 1;
+						</code></pre>
+						<p class="fragment" data-transition="zoom">'+' is an operator</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<h3>Java's Operators</h3>
+						<div style="display:flex;">
+							<table class="fragment" data-transition="fragment zoom">
+								<tr>
+									<td>+</td>
+									<td>Addition</td>
+								</tr>
+								<tr>
+									<td>-</td>
+									<td>Subtraction</td>
+								</tr>
+								<tr>
+									<td>*</td>
+									<td>Multiplication</td>
+								</tr>
+								<tr>
+									<td>/</td>
+									<td>Division</td>
+								</tr>
+							</table>
+							<table class="fragment" data-transition="fragment zoom">
+								<tr>
+									<td>%</td>
+									<td>Modulo</td>
+								</tr>
+								<tr>
+									<td>++</td>
+									<td>Increment</td>
+								</tr>
+								<tr>
+									<td>--</td>
+									<td>Decrement</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section>
+						<h3>Modulo</h3>
+						<p>Modulo is division, but gets the remainder of the division after being divided equally</p>
+						<pre><code class="language-java" data-trim data-noescape data-line-numbers>
+							1 / 1; // This is normal divison, would return 1
+							1 % 1; // Would return 0, the remainder of 1/1
+
+							6 / 4; // Would give 1.5
+							6 % 4; // Would give 2, the remainder of 6 / 4
+						</code></pre>
+					</section>
+					<section>
+						<h3>Increments/Decrements</h3>
+						<p>Increments and decrements can be used to increment and decrement values</p>
+						<pre><code class="language-java" data-trim data-noescape data-line-numbers>
+							int myVariable = 1;
+
+							myVariable++; // myVariable now equals 2
+							myVariable++; // myVariable now equals 3
+							
+							myVariable--; // myVaraible now equals 2
+						</code></pre>
+					</section>
+				</section>
+				<section>
+					<h3>Compound Operators</h3>
+					<p>Any operator (except for increments and decrements) with an equals sign can be used to change a variable</p>
+					<pre><code class="language-java" data-trim data-noescape data-line-numbers>
+						int myVariable = 1;
+
+						myVariable = myVariable + 10;
+						
+						// This previous code can become
+
+						myVariable += 10;
+					</code></pre>
+				</section>
+				<section>
+					<section data-auto-animate>
+						<p>If ... is true, do ...</p>
+					</section>
+					<section data-auto-animate>
+						<h1>Conditions</h1>
+						<p>If ... is true, do ...</p>
+					</section>
+					<section>
+						<h3>IF statements</h3>
+						<p>IF statements are used to only run a block of code <strong>if a certain condition is true</strong></p>
+						<pre><code class="language-java" data-trim data-noescape data-line-numbers>
+							if (condition) { // If 'condition' is true
+								// Run the code here
+							}
+						</code></pre>
+						<pre class="fragment"><code class="language-java" data-trim data-noescape data-line-numbers>
+							if (condition) { // If 'condition' is true
+								// Run the code here
+								// Must have at least one starting if block
+							} else if (otherCondition) {
+								// Run if 'condition' is false, but
+								// 'otherCondition' is true
+								// Optional, You can have as many of these as you want
+							} else {
+								// Run if both conditions are false
+								// Optional, Can only have one
+							}
+						</code></pre>
+					</section>
+					<section>
+						<h3>Conditonal operators</h3>
+						<p>value &ltoperator&gt  otherValue</p>
+						<!-- Have top use &gt and &lt to show > and < symbols because html-->
+						<div style="display:flex;">
+							<table>
+								<tr>
+									<td>&lt</td>
+									<td>Less than</td>
+								</tr>
+								<tr>
+									<td>&gt</td>
+									<td>Greater than</td>
+								</tr>
+								<tr>
+									<td>==</td>
+									<td>Equal to</td>
+								</tr>
+								<tr>
+									<td>!=</td>
+									<td>Not equal to</td>
+								</tr>
+							</table>
+							<table>
+								<tr>
+									<td>&lt=</td>
+									<td>Less than or equal to</td>
+								</tr>
+								<tr>
+									<td>&gt=</td>
+									<td>Greater than or equal to</td>
+								</tr>
+								<tr>
+									<td>&&</td>
+									<td>AND</td>
+								</tr>
+								<tr>
+									<td>||</td>
+									<td>OR</td>
+								</tr>
+							</table>
+						</div>
+					</section>
+					<section data-auto-animate>
+						<pre data-id="if-var-animation"><code class="language-java" data-trim data-noescape data-line-numbers>
+							if (1 + 1 == 2) {
+								System.out.println("All is normal.");
+							} else {
+								System.out.println("It's the end of the world.");
+							}
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<pre data-id="if-var-animation"><code class="language-java" data-trim data-noescape data-line-numbers>
+							if (1 + 1 == 2) {
+								System.out.println("All is normal.");
+							} else {
+								System.out.println("It's the end of the world.");
+							}
+
+							int myVar = 1;
+							int myOtherVar = 2;
+
+							if(myVar == 1) {
+								System.out.println("myVar is equal to 1!");
+							}
+						</code></pre>
+					</section>
+					<section data-auto-animate>
+						<pre data-id="if-var-animation"><code class="language-java" data-trim data-noescape data-line-numbers data-ln-start-from="7">
+							int myVar = 1;
+							int myOtherVar = 2;
+
+							if(myVar == 1) {
+								System.out.println("myVar is equal to 1!");
+							}
+
+							if((myVar + 1) == myOtherVar) {
+								System.out.println("myVar + 1 is the value of myOtherVar");
+							}
+						</code></pre>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="../reveal/dist/reveal.js"></script>
+		<script src="../reveal/plugin/notes/notes.js"></script>
+		<script src="../reveal/plugin/markdown/markdown.js"></script>
+		<script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
