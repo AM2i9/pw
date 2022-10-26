@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Loops</title>
+
+		<link rel="stylesheet" href="../reveal/dist/reset.css">
+		<link rel="stylesheet" href="../reveal/dist/reveal.css">
+		<link rel="stylesheet" href="../reveal/dist/theme/blood.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="../reveal/plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Welcome to Programming!</h2>
+                    <img src="https://imgs.xkcd.com/comics/flowchart.png">
+					<!-- <img src="../reveal/images/duck_white.png" alt="ducky" width="150vw"> -->
+				</section>
+                <section>
+					<h1>Loops!</h1>
+                    <h2>Loops!</h2>
+                    <h3>Loops!</h3>
+                    <p>Loops!</p>
+                    <p style="font-size: x-small;">Loops!</p>
+                    <p style="font-size: 5px;">Loops!</p>
+                    <p style="font-size: 1px;">Loops!</p>
+                    <p style="font-size: 0.5px;">Loops!</p>
+				</section>
+                <section>
+                    <h2>Types of loops</h2>
+                    <p>while, for, do-while</p>
+                </section>
+                <section>
+                    <h2>while loops</h2>
+                    <p>A while loops runs while a condition is true, or until a condition is false</p>
+                    <pre><code class="language-java" data-trim data-noescape data-line-numbers>
+                        int i = 0;
+
+                        while (i < 5) {
+                            // This code will be repeated until i is not less than 5
+
+                            i++; // Increment 'i' by 1
+                            System.out.println("i is less than 5");
+                            System.out.println(i);
+                        }
+
+                        System.out.println("i is now greater than or equal to 5");
+                    </code></pre>
+                </section>
+                <section>
+                    <h2>do-while loops</h2>
+                    <p>A while loop, but the condition is checked after the code in the block is run</p>
+                    <pre><code class="language-java" data-trim data-noescape data-line-numbers>
+                        int i = 5;
+
+                        do {
+                            // This code will be repeated until i is not less than 5
+                            // But, it will run at least once before checking that
+                            // condition.
+
+                            i++; // Increment 'i' by 1
+                            System.out.println("i is less than 5");
+                            System.out.println(i);
+
+                        } while (i < 5);
+
+                        System.out.println("i is now greater than or equal to 5");
+
+                    </code></pre>
+                </section>
+                 <section data-auto-animate>
+                    <h2>for loops</h2>
+                    <p>Usually used to run for a specific number of repetitions</p>
+                    <pre data-id="for-loop"><code class="language-java" data-trim data-noescape data-line-numbers>
+                        int i = 0;
+
+                        while (i < 5) {
+                            // This code will be repeated until i is not less than 5
+
+                            i++; // Increment 'i' by 1
+                            System.out.println("i is less than 5");
+                            System.out.println(i);
+                        }
+
+                        System.out.println("i is now greater than or equal to 5");
+                    </code></pre>
+                </section>
+                <section data-auto-animate>
+                    <h2>for loops</h2>
+                    <p>Usually used to run for a specific number of repetitions</p>
+                    <pre data-id="for-loop"><code class="language-java" data-trim data-noescape data-line-numbers>
+                        for (int i = 0; i < 5; i++) {
+                            System.out.println("i is less than 5");
+                            System.out.println(i);
+                        }
+                    </code></pre>
+                    <p class="fragment">for (<strong>initial</strong>; <strong>condition</strong>; <strong>update</strong>)</p>
+                </section>
+                <section data-auto-animate>
+                    <p>for (<strong>initial</strong>; <strong>condition</strong>; <strong>update</strong>)</p>
+                    <p class="fragment"><strong>initial</strong> - A statement that is executed before the start of the loop. For example, creating the variable <code class="language-java">i</code class="language-java"> with <code>int i = 0;</code>.</p>
+                    <p class="fragment"><strong>condition</strong> - The condition to test for, on what condition should the loop exit? Ex. <code class="language-java">i < 5</code></p>
+                    <p class="fragment"><strong>initial</strong> - A statement that is run before every repetition of the loop, except for the first.</p>
+                </section>
+			</div>
+		</div>
+
+		<script src="../reveal/dist/reveal.js"></script>
+		<script src="../reveal/plugin/notes/notes.js"></script>
+		<script src="../reveal/plugin/markdown/markdown.js"></script>
+		<script src="../reveal/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
